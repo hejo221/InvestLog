@@ -37,5 +37,5 @@ void addStocksEntry(const char *filename);
 void showMainMenu(Stock stocks[], int count);
 
 int main() {
-    return 0;
+    return 0; 
 }

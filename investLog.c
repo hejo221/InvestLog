@@ -3,13 +3,12 @@
 #include <string.h>
 
 #define MAX_LINE_SIZE 1024
-#define MAX_COMPANY_NAME_SIZE 256
+#define MAX_NAME_SIZE 256
 #define MAX_ISIN_SIZE 13
 #define MAX_DATE_SIZE 11
-#define MAX_NAME_SIZE 256
 
 typedef struct {
-    char company_name[MAX_COMPANY_NAME_SIZE];
+    char company_name[MAX_NAME_SIZE];
     char isin[MAX_ISIN_SIZE];
     int quantity; 
     double price;
@@ -30,7 +29,7 @@ void printDividendYield(Stock stocks[], int count);
 
 double calculateAverageSellPrice(Stock stocks[], int count);
 
-void printTopThreeBuyingPositions(Stock stocks[], int count);
+void printTopThreeStocksPositions(Stock stocks[], int count);
 
 void addStocksEntry(const char *filename);
 

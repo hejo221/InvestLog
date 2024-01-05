@@ -427,6 +427,7 @@ void showMainMenu(Stock stocks[]) {
                 exit(0);  // Exit the program
                 break;
             default:
+                clearConsole();
                 printf("\nInvalid choice. Please enter a number between 0 and 6.\n");
         }
 
